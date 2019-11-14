@@ -1,3 +1,5 @@
+import {colorNames} from './utils';
+
 export default {
   title: 'Text'
 }
@@ -7,7 +9,16 @@ export const basic = () => `
 `
 
 export const colored = () => `
-    <div class="text">text</div>
-    <div class="text text--gray-4">text</div>
-    <div class="text text--white">text</div>
+    ${colorNames.map(colorName => `<div class="text text--${colorName}">text</div>`).join('')}
+`
+
+export const sized = () => `
+    <div class="text text--small">small</div>
+    <div class="text text--small">text</div>
+    <div class="text text">medium</div>
+    <div class="text text">text</div>
+    <div class="text text--big">big</div>
+    <div class="text text--big">text</div>
+    <div class="text text--huge">huge</div>
+    <div class="text text--huge">text</div>
 `
