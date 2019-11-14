@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'Inter', sans-serif;
+    src: url('../fonts/Inter-Bold.otf');
+}
+
+.text {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 2;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--color-black);
+}
