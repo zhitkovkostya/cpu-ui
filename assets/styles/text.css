@@ -13,3 +13,11 @@
     text-transform: uppercase;
     color: var(--color-black);
 }
+
+.text--white {
+    color: var(--color-white);
+}
+
+.text--gray-4 {
+    color: var(--color-gray-4);
+}
