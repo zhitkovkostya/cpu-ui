@@ -17,8 +17,8 @@ export const colored = () => {
 export const sized = () => `
     <div class="text text--small">small</div>
     <div class="text text--small">text</div>
-    <div class="text text">medium</div>
-    <div class="text text">text</div>
+    <div class="text text--medium">medium</div>
+    <div class="text text--medium">text</div>
     <div class="text text--big">big</div>
     <div class="text text--big">text</div>
     <div class="text text--huge">huge</div>
