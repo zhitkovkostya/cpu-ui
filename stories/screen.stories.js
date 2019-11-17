@@ -30,7 +30,9 @@ export const basic = () => `
                 >
             </div>
         </div>
-        <div class="grid__cell grid__cell--gray-middle">1</div>
+        <div class="grid__cell grid__cell--gray-middle">
+            <img src="/images/image-2.png" alt="Image" class="image">            
+        </div>
         <div class="grid__cell grid__cell--gray-darkest">
             <div class="text text--small text--white">‵   \\
 \\   \\
