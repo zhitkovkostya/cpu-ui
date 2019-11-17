@@ -4,12 +4,34 @@ export default {
 
 export const basic = () => `
     <style>
-        .grid {
-            grid-template-areas: 
-            'cell-01 cell-02 .       .'
-            '.       .       .       .'
-            'cell-03 cell-03 cell-03 cell-03'
-            'cell-04 cell-04 cell-04 cell-04';
+        @media all and (min-width: 1281px) {
+            .grid {
+                grid-template-areas: 
+                    'cell-01 cell-02 .       .      '
+                    '.       .       .       .      '
+                    'cell-03 cell-03 cell-03 cell-03'
+                    'cell-04 cell-04 cell-04 cell-05';
+            }
+        }
+        
+        @media all and (min-width: 768px) and (max-width: 1280px) {
+            .grid {
+                grid-template-areas: 
+                    'cell-01 cell-02'
+                    'cell-03 cell-03'
+                    'cell-04 cell-05';
+            }
+        }
+        
+        @media all and (min-width: 0px) and (max-width: 767px) {
+            .grid {
+                grid-template-areas: 
+                    'cell-01'
+                    'cell-02'
+                    'cell-03'
+                    'cell-04'
+                    'cell-05';
+            }
         }
     </style>
     
@@ -54,6 +76,11 @@ export const basic = () => `
 \\   \\
 
 rstn
+            </div>
+        </div>
+        <div class="grid__cell grid__cell--gray-darkest">
+            <div class="text text--small text--white">← →
+use arrows
             </div>
         </div>
     </div>

@@ -1,7 +1,13 @@
+:root {
+    --device-min-width-desktop: 1281px;
+    --device-min-width-tablet: 768px;
+    --device-min-width-mobile: 0px;
+    --grid-template-rows: ;
+    --grid-template-columns:;
+}
+
 .grid {
     display: grid;
-    grid-template-rows: repeat(4, 25%);
-    grid-template-columns: repeat(4, 25%);
     grid-template-areas:
         'cell-01 cell-02 cell-03 cell-04'
         'cell-05 cell-06 cell-07 cell-08'
@@ -11,6 +17,27 @@
     height: 100vh;
     background: transparent no-repeat center center fixed;
     background-size: cover;
+}
+
+@media all and (min-width: 1281px) {
+    .grid {
+        grid-auto-rows: 25%;
+        grid-auto-columns: 25%;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1280px) {
+    .grid {
+        grid-auto-rows: 50%;
+        grid-auto-columns: 50%;
+    }
+}
+
+@media all and (min-width: 0px) and (max-width: 767px) {
+    .grid {
+        grid-auto-rows: 50%;
+        grid-auto-columns: 100%;
+    }
 }
 
 .grid--bordered {
