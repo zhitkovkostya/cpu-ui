@@ -6,10 +6,10 @@ export const basic = () => `
     <style>
         .grid {
             grid-template-areas: 
-            'cell-01 cell-01 cell-01 cell-01'
-            'cell-01 cell-01 cell-01 cell-01'
-            'cell-02 cell-02 cell-02 cell-02'
-            'cell-03 cell-03 cell-03 cell-03';
+            'cell-01 cell-02 .       .'
+            '.       .       .       .'
+            'cell-03 cell-03 cell-03 cell-03'
+            'cell-04 cell-04 cell-04 cell-04';
         }
     </style>
     
@@ -27,6 +27,22 @@ export const basic = () => `
                 time
                 code
                 response
+                >
+            </div>
+        </div>
+        <div class="grid__cell">
+            <div class="text text--small text--white"><
+                rstn149
+                —
+                04.06.2019 mdy
+                01.04 /spbtz
+                —
+                
+                —
+                —
+                —
+                429
+                std103
                 >
             </div>
         </div>
