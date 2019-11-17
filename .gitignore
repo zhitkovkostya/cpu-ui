@@ -2,3 +2,4 @@ node_modules
 .storybook
 package-lock.json
 .idea/
+storybook-static
