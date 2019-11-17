@@ -1,4 +1,4 @@
-import {colorNames} from './utils';
+import {getColorNames} from './utils';
 
 export default {
   title: 'Text'
@@ -8,9 +8,11 @@ export const basic = () => `
     <div class="text">text</div>
 `
 
-export const colored = () => `
+export const colored = () => {
+  const colorNames = getColorNames();
+  return `
     ${colorNames.map(colorName => `<div class="text text--${colorName}">text</div>`).join('')}
-`
+`}
 
 export const sized = () => `
     <div class="text text--small">small</div>
