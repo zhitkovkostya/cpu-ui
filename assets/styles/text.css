@@ -1,6 +1,6 @@
 :root {
     --scale-unit: 1;
-    --base-unit: calc(10px * --scale-unit);
+    --base-unit: calc(10px * var(--scale-unit));
     --font-size-small: var(--base-unit);
     --font-size-medium: calc(var(--base-unit) * 2);
     --font-size-big: calc(var(--base-unit) * 4);
