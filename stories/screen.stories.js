@@ -136,14 +136,5 @@ export const basic = () => `
                 </div>
             </div>
         </div>
-        
-        <div class="grid">
-            <div class="grid__cell">
-                <div class="text text--large text--gray-light">/ / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / </div>            
-            </div>
-            <div class="grid__cell">
-                <div class="text text--large text--gray-light">. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . </div>            
-            </div>
-        </div>
     </div>
 `
