@@ -2,8 +2,6 @@
     display: grid;
     grid-auto-rows: 25vh;
     grid-auto-columns: 25vw;
-    background: transparent no-repeat center center fixed;
-    background-size: cover;
     grid-template-areas:
         'cell-01 cell-02 cell-03 cell-04'
         'cell-05 cell-06 cell-07 cell-08'
@@ -47,7 +45,8 @@
 }
 
 .grid__cell {
-
+    background: transparent no-repeat center center fixed;
+    background-size: cover;
 }
 
 .grid__cell:nth-child(1) {

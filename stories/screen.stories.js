@@ -5,7 +5,7 @@ export default {
 export const basic = () => `
     <style>
         @media all and (min-width: 1281px) {
-            .grid {
+            #section429 .grid {
                 grid-template-areas: 
                     'cell-01 cell-02 .       .      '
                     '.       .       .       .      '
@@ -15,7 +15,7 @@ export const basic = () => `
         }
         
         @media all and (min-width: 768px) and (max-width: 1280px) {
-            .grid {
+            #section429 .grid {
                 grid-template-areas: 
                     'cell-01 cell-02'
                     'cell-03 cell-03'
@@ -24,7 +24,7 @@ export const basic = () => `
         }
         
         @media all and (min-width: 0px) and (max-width: 767px) {
-            .grid {
+            #section429 .grid {
                 grid-template-areas: 
                     'cell-01'
                     'cell-02'
@@ -33,10 +33,43 @@ export const basic = () => `
                     'cell-05';
             }
         }
+        
+        @media all and (min-width: 1281px) {
+            #section439 .grid {
+                grid-template-areas: 
+                    'cell-01 cell-02 .       .      '
+                    'cell-03 cell-03 cell-03 cell-03'
+                    'cell-04 cell-05 .       .'
+                    'cell-06 .       .       cell-07';
+            }
+        }
+        
+        @media all and (min-width: 768px) and (max-width: 1280px) {
+            #section439 .grid {
+                grid-template-areas: 
+                    'cell-01 cell-02'
+                    'cell-03 cell-03'
+                    'cell-04 cell-05'
+                    'cell-06 cell-07';
+            }
+        }
+        
+        @media all and (min-width: 0px) and (max-width: 767px) {
+            #section439 .grid {
+                grid-template-areas: 
+                    'cell-01'
+                    'cell-02'
+                    'cell-03'
+                    'cell-04'
+                    'cell-05'
+                    'cell-06'
+                    'cell-07';
+            }
+        }
     </style>
     
-    <div class="section">
-        <div class="grid" style="background-image: url('/images/image-1.png')">
+    <div class="section" id="section429" style="background-image: url('/images/image-1.png');">
+        <div class="grid">
             <div class="grid__cell">
                 <div class="text text--small text--white">< message info
                     from
@@ -85,5 +118,101 @@ export const basic = () => `
                 </div>
             </div>
         </div>
+    </div>
+`
+
+export const screen439 = () => `
+    <style>
+       
+        @media all and (min-width: 1281px) {
+            #section439 .grid {
+                grid-template-areas: 
+                    'cell-01 cell-02 .       .      '
+                    'cell-03 cell-03 cell-03 cell-03'
+                    'cell-04 cell-05 .       .'
+                    'cell-06 .       .       cell-07';
+            }
+        }
+        
+        @media all and (min-width: 768px) and (max-width: 1280px) {
+            #section439 .grid {
+                grid-template-areas: 
+                    'cell-01 cell-02'
+                    'cell-03 cell-03'
+                    'cell-04 cell-05'
+                    'cell-06 cell-07';
+            }
+        }
+        
+        @media all and (min-width: 0px) and (max-width: 767px) {
+            #section439 .grid {
+                grid-template-areas: 
+                    'cell-01'
+                    'cell-02'
+                    'cell-03'
+                    'cell-04'
+                    'cell-05'
+                    'cell-06'
+                    'cell-07';
+            }
+        }
+    </style>
+    
+    
+    <div class="section section--gray-light" id="section439">
+        <div class="grid">
+            <div class="grid__cell">
+                <div class="text text--small">< message info
+                    from
+                    id
+                    date
+                    time
+                    type
+                    
+                    received
+                    date
+                    time
+                    code
+                    response
+                    >
+                </div>
+            </div>
+            <div class="grid__cell">
+                <div class="text text--small"><
+                    rstn149
+                    —
+                    04.08.2019 mdy
+                    00.40 /spbtz
+                    —
+                    
+                    —
+                    —
+                    —
+                    439
+                    std103
+                    >
+                </div>
+            </div>
+            <div class="grid__cell">
+                <div class="text text--big">The only ultimate disaster that can befall us, I have come to realise, is to feel ourselves to be at home here on Earth.
+// Malcolm Muggerige</div>
+            </div>
+            <div class="grid__cell" style="background-image: url('/images/image-3.png')"></div>
+            <div class="grid__cell" style="background-image: url('/images/image-4.png')"></div>
+            <div class="grid__cell">
+                <div class="text text--small">‵   \\
+    \\   \\
+    
+    rstn
+                </div>
+            </div>
+            <div class="grid__cell">
+                <div class="text text--small">← →
+    use arrows
+                </div>
+            </div>
+        </div>
+    </div>
+        
     </div>
 `

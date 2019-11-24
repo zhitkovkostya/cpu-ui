@@ -59,10 +59,6 @@
 }
 
 .text--small::before {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
     margin-top: calc((1 - var(--line-height-small)) * 0.5em);
 }
 
@@ -72,10 +68,18 @@
     letter-spacing: 1px;
 }
 
+.text--medium::before {
+    margin-top: calc((1 - var(--line-height-medium)) * 0.5em);
+}
+
 .text--big {
     font-size: var(--font-size-big);
     line-height: var(--line-height-big);
     letter-spacing: 0;
+}
+
+.text--big::before {
+    margin-top: calc((1 - var(--line-height-big)) * 0.5em);
 }
 
 .text--huge {
@@ -83,6 +87,10 @@
     font-size: var(--font-size-huge);
     line-height: var(--line-height-huge);
     letter-spacing: 0;
+}
+
+.text--huge::before {
+    margin-top: calc((1 - var(--line-height-huge)) * 0.5em);
 }
 
 .text--black {
