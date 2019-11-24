@@ -45,7 +45,8 @@
 }
 
 .grid__cell {
-    background: transparent no-repeat center center fixed;
+    display: flex;
+    background: transparent no-repeat center center;
     background-size: cover;
 }
 
@@ -111,6 +112,18 @@
 
 .grid__cell:nth-child(16) {
     grid-area: cell-16;
+}
+
+.grid__cell--top {
+    align-items: flex-start;
+}
+
+.grid__cell--center {
+    align-items: center;
+}
+
+.grid__cell--bottom {
+    align-items: flex-end;
 }
 
 .grid__cell--white {

@@ -49,7 +49,13 @@
     display: block;
     height: 0;
     width: 0;
-    margin-top: calc((1 - var(--line-height-medium)) * 0.5em);
+}
+
+.text::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
 }
 
 .text--small {
@@ -62,6 +68,10 @@
     margin-top: calc((1 - var(--line-height-small)) * 0.5em);
 }
 
+.text--small::after {
+    margin-bottom: calc((1 - var(--line-height-small)) * 0.5em);
+}
+
 .text--medium {
     font-size: var(--font-size-medium);
     line-height: var(--line-height-medium);
@@ -70,6 +80,10 @@
 
 .text--medium::before {
     margin-top: calc((1 - var(--line-height-medium)) * 0.5em);
+}
+
+.text--medium::after {
+    margin-bottom: calc((1 - var(--line-height-medium)) * 0.5em);
 }
 
 .text--big {
@@ -82,6 +96,10 @@
     margin-top: calc((1 - var(--line-height-big)) * 0.5em);
 }
 
+.text--big::after {
+    margin-bottom: calc((1 - var(--line-height-big)) * 0.5em);
+}
+
 .text--huge {
     font-weight: normal;
     font-size: var(--font-size-huge);
@@ -91,6 +109,10 @@
 
 .text--huge::before {
     margin-top: calc((1 - var(--line-height-huge)) * 0.5em);
+}
+
+.text--huge::after {
+    margin-bottom: calc((1 - var(--line-height-huge)) * 0.5em);
 }
 
 .text--black {
