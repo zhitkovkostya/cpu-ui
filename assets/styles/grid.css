@@ -11,6 +11,12 @@
         'cell-13 cell-14 cell-15 cell-16';
 }
 
+.grid:not(:first-of-type) {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 @media all and (min-width: 1281px) {
     .grid {
         grid-auto-rows: 25vh;
