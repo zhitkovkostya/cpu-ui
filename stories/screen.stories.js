@@ -323,7 +323,7 @@ export const screen429 = () => `
                     >
                 </div>
             </div>
-            <div class="grid__cell grid__cell--bottom">
+            <div class="grid__cell">
                 <div class="text text--small">‵   \\
     \\   \\
     

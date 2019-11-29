@@ -114,18 +114,6 @@
     grid-area: cell-16;
 }
 
-.grid__cell--top {
-    align-items: flex-start;
-}
-
-.grid__cell--center {
-    align-items: center;
-}
-
-.grid__cell--bottom {
-    align-items: flex-end;
-}
-
 .grid__cell--white {
     background-color: var(--color-white);
 }
