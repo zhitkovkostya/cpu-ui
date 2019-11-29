@@ -123,7 +123,6 @@ export const basic = () => `
 
 export const screen439 = () => `
     <style>
-       
         @media all and (min-width: 1281px) {
             #section439 .grid {
                 grid-template-areas: 
@@ -157,8 +156,7 @@ export const screen439 = () => `
             }
         }
     </style>
-    
-    
+
     <div class="section section--gray-light" id="section439">
         <div class="grid">
             <div class="grid__cell">
@@ -217,7 +215,6 @@ export const screen439 = () => `
 
 export const screen429 = () => `
     <style>
-       
         @media all and (min-width: 1281px) { 
             #section429 .grid:nth-child(1) {
                 grid-template-areas: 
