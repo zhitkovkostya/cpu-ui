@@ -5,21 +5,23 @@
     --font-size-medium: calc(var(--base-unit) * 2);
     --font-size-big: calc(var(--base-unit) * 4);
     --font-size-huge: calc(var(--base-unit) * 8);
+    --font-size-paragraph: calc(var(--base-unit) * 2);
     --line-height-small: 2;
-    --line-height-medium: 2;
-    --line-height-big: 1.5;
-    --line-height-huge: 1.5;
+    --line-height-medium: 1.5;
+    --line-height-big: 1.25;
+    --line-height-huge: 1.25;
+    --line-height-paragraph: 1.5;
 }
 
 @media all and (min-width: 1281px) {
     :root {
-        --scale-unit: 1.3;
+        --scale-unit: 1;
     }
 }
 
 @media all and (min-width: 768px) and (max-width: 1280px) {
     :root {
-        --scale-unit: 1.2;
+        --scale-unit: 1;
     }
 }
 
@@ -30,18 +32,29 @@
 }
 
 @font-face {
-    font-family: 'Inter', sans-serif;
-    src: url('../fonts/Inter-Bold.otf');
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('../fonts/Inter-Bold.woff2?v=3.15') format('woff2'),
+    url('../fonts/Inter-Bold.woff?v=3.15') format('woff');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../fonts/Inter-Regular.woff2?v=3.15') format('woff2'),
+    url('../fonts/Inter-Regular.woff?v=3.15') format('woff');
 }
 
 .text {
     z-index: 1;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 400;
     font-size: var(--font-size-medium);
     line-height: var(--line-height-medium);
-    letter-spacing: 3px;
-    text-transform: uppercase;
     white-space: pre-line;
     user-select: none;
 }
@@ -63,7 +76,6 @@
 .text--small {
     font-size: var(--font-size-small);
     line-height: var(--line-height-small);
-    letter-spacing: 1px;
 }
 
 .text--small::before {
@@ -77,7 +89,6 @@
 .text--medium {
     font-size: var(--font-size-medium);
     line-height: var(--line-height-medium);
-    letter-spacing: 1px;
 }
 
 .text--medium::before {
@@ -89,9 +100,9 @@
 }
 
 .text--big {
+    font-weight: 400;
     font-size: var(--font-size-big);
     line-height: var(--line-height-big);
-    letter-spacing: 0;
 }
 
 .text--big::before {
@@ -106,7 +117,6 @@
     font-weight: normal;
     font-size: var(--font-size-huge);
     line-height: var(--line-height-huge);
-    letter-spacing: 0;
 }
 
 .text--huge::before {
@@ -115,6 +125,28 @@
 
 .text--huge::after {
     margin-bottom: calc((1 - var(--line-height-huge)) * 0.5em);
+}
+
+.text--paragraph {
+    font-size: var(--font-size-paragraph);
+    line-height: var(--line-height-paragraph);
+    text-transform: none;
+    letter-spacing: normal;
+    font-weight: 300;
+    text-transform: none;
+}
+
+.text--paragraph::before {
+    margin-top: calc((1 - var(--line-height-paragraph)) * 0.5em);
+}
+
+.text--paragraph::after {
+    margin-bottom: calc((1 - var(--line-height-paragraph)) * 0.5em);
+}
+
+.text--caps {
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
 }
 
 .text--black {
@@ -139,4 +171,73 @@
 
 .text--white {
     color: var(--color-white);
+}
+
+.text--link {
+    text-decoration: none;
+    color: #007FFF;
+}
+
+.text--link:hover {
+    opacity: 0.7;
+}
+
+.text--dark-1 {
+    color: var(--color-dark-1);
+}
+
+.text--dark-2 {
+    color: var(--color-dark-2);
+}
+
+.text--dark-3 {
+    color: var(--color-dark-3);
+}
+
+.text--dark-4 {
+    color: var(--color-dark-4);
+}
+
+.text--dark-5 {
+    color: var(--color-dark-5);
+}
+
+.text--medium-1 {
+    color: var(--color-medium-1);
+}
+
+.text--medium-2 {
+    color: var(--color-medium-2);
+}
+
+.text--medium-3 {
+    color: var(--color-medium-3);
+}
+
+.text--medium-4 {
+    color: var(--color-medium-4);
+}
+
+.text--medium-5 {
+    color: var(--color-medium-5);
+}
+
+.text--light-1 {
+    color: var(--color-light-1);
+}
+
+.text--light-2 {
+    color: var(--color-light-2);
+}
+
+.text--light-3 {
+    color: var(--color-light-3);
+}
+
+.text--light-4 {
+    color: var(--color-light-4);
+}
+
+.text--light-5 {
+    color: var(--color-light-5);
 }
