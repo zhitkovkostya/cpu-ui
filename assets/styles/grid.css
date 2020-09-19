@@ -2,11 +2,7 @@
     display: grid;
     grid-auto-rows: 25vh;
     grid-auto-columns: 25vw;
-    grid-template-areas:
-        'cell-01 cell-02 cell-03 cell-04'
-        'cell-05 cell-06 cell-07 cell-08'
-        'cell-09 cell-10 cell-11 cell-12'
-        'cell-13 cell-14 cell-15 cell-16';
+    grid-template-areas: 'cell-01 cell-02 cell-03 cell-04' 'cell-05 cell-06 cell-07 cell-08' 'cell-09 cell-10 cell-11 cell-12' 'cell-13 cell-14 cell-15 cell-16';
 }
 
 .grid:not(:first-of-type) {
@@ -138,5 +134,30 @@
 
 .grid__cell--black {
     background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+.grid__cell--dark-1 {
+    background-color: var(--color-dark-1);
+    color: var(--color-white);
+}
+
+.grid__cell--dark-2 {
+    background-color: var(--color-dark-2);
+    color: var(--color-white);
+}
+
+.grid__cell--dark-3 {
+    background-color: var(--color-dark-3);
+    color: var(--color-white);
+}
+
+.grid__cell--dark-4 {
+    background-color: var(--color-dark-4);
+    color: var(--color-white);
+}
+
+.grid__cell--dark-5 {
+    background-color: var(--color-dark-5);
     color: var(--color-white);
 }

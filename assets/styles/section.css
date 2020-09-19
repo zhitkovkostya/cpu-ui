@@ -7,6 +7,11 @@
     background-size: cover;
 }
 
+.section--gray-darkest {
+    background-color: var(--color-gray-darkest);
+    color: var(--color-gray-light);
+}
+
 .section--gray-light {
     background-color: var(--color-gray-light);
     color: var(--color-gray-darkest);

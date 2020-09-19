@@ -6,304 +6,150 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Rainstation</title>
-    <link href="/rainstation/assets/styles/main.css" rel="stylesheet">
+    <link href="/cpu-ui/assets/styles/main.css" rel="stylesheet">
 </head>
 <body>
     <style>
         @media all and (min-width: 1281px) {
-            #section419 .grid {
+            #section001 .grid:nth-child(1) {
                 grid-template-areas:
-                    'cell-01 cell-02 .       .      '
-                    '.       .       .       .      '
-                    'cell-03 cell-03 cell-03 cell-03'
-                    'cell-04 cell-04 cell-04 cell-05';
+                        'cell-01 .       cell-02 cell-02'
+                        '.       .       cell-02 cell-02'
+                        'cell-03 cell-04 .       .      '
+                        'cell-03 cell-04 cell-05 .      '
+                        'cell-03 cell-07 cell-08 .      '
+                        'cell-06 .       .       .      '
+                        '.       .       .       .      '
+                        '.       .       .       .      ';
+            }
+            #section001 .grid:nth-child(2) {
+                grid-template-areas:
+                        '.       cell-09 .       .      '
+                        'cell-05 cell-06 cell-07 cell-08'
+                        'cell-01 cell-02 .       cell-04'
+                        '.       .       cell-03 .      '
+                        '.       .       .       .      '
+                        '.       .       .       .      '
+                        '.       .       .       .      '
+                        '.       .       .       cell-10';
             }
         }
 
         @media all and (min-width: 768px) and (max-width: 1280px) {
-            #section419 .grid {
+            #section001 .grid:nth-child(1) {
                 grid-template-areas:
-                    'cell-01 cell-02'
-                    'cell-03 cell-03'
-                    'cell-04 cell-05';
+                        'cell-01 cell-02'
+                        'cell-03 cell-04'
+                        'cell-06 cell-07'
+                        'cell-05 .      '
+                        'cell-08 .      ';
+            }
+            #section001 .grid:nth-child(2) {
+                grid-template-areas:
+                        '.       .      '
+                        '.       .      '
+                        '.       .      '
+                        '.       .      '
+                        '.       .      ';
             }
         }
 
         @media all and (min-width: 0px) and (max-width: 767px) {
-            #section419 .grid {
+            #section001 .grid:nth-child(1) {
                 grid-template-areas:
-                    'cell-01'
-                    'cell-02'
-                    'cell-03'
-                    'cell-04'
-                    'cell-05';
+                        'cell-01'
+                        'cell-02'
+                        'cell-03'
+                        'cell-06'
+                        'cell-04'
+                        'cell-07'
+                        'cell-05'
+                        'cell-08';
+            }
+            #section001 .grid:nth-child(2) {
+                grid-template-areas:
+                        '.      '
+                        '.      '
+                        '.      '
+                        '.      '
+                        '.      '
+                        '.      '
+                        '.      '
+                        '.      ';
             }
         }
     </style>
 
-    <div class="section" id="section419" style="background-image: url('/rainstation/assets/images/image-1.png');">
+    <div class="section" id="section001" style="background-color: var(--color-dark-3)">
         <div class="grid">
             <div class="grid__cell">
-                <div class="text text--small text--white">< message info
-                    from
-                    id
-                    date
-                    time
-                    type
-
-                    received
-                    date
-                    time
-                    code
-                    response
-                    >
-                </div>
+                <img src="./assets/images/Rainstation mark.svg" alt="" class="image" height="42px" width="42px">
             </div>
             <div class="grid__cell">
-                <div class="text text--small text--white"><
-                    rstn149
-                    —
-                    04.06.2019 mdy
-                    01.04 /spbtz
-                    —
+                <div class="text text--caps text--big text--dark-1">Дождевая Станция
+                    Оглавление</div>
+            </div>
+            <div class="grid__cell" style="background-image: url('./assets/images/contents-operator.jpg')">
+            </div>
+            <div class="grid__cell" style="background-image: url('./assets/images/contents-rr.png')">
+            </div>
+            <div class="grid__cell" style="background-image: url('./assets/images/contents-clouds.jpg')">
+            </div>
 
-                    —
-                    —
-                    —
-                    429
-                    std103
-                    >
-                </div>
+            <div class="grid__cell">
+                <div class="text text--medium text--light-1"><a class="text--link" href="/diary/2020-09/">Дневник Оператора Станции
+                    →</a>
+                    Записи, которые вы&nbsp;получаете с&nbsp;Дождевой Станции, напечатаны на&nbsp;глухом каменном островке моими постоянно мерзнущими пальцами.</div>
             </div>
-            <div class="grid__cell grid__cell--gray-middle">
-                <img src="/rainstation/assets/images/image-2.png" alt="Image" class="image">
+            <div class="grid__cell">
+                <div class="text text--medium text--light-1"><a class="text--link" href="/font/">Шрифт Rainstation
+                    →</a>
+                    Шрифт, который будет использоваться в коммуникации сети станций «Полюс».</div>
             </div>
-            <div class="grid__cell grid__cell--gray-darkest">
-                <div class="text text--small text--white">‵   \
-    \   \
+            <div class="grid__cell">
+                <div class="text text--medium text--light-1"><a class="text--link" href="/design-system/">Rainstation Design System
+                    →</a>
+                    Дизайн-система Дождевой Станции. Используется для оформления метеоотчетов, содержащих погодные данные и&nbsp;личные заметки Оператора.</div>
+            </div>
 
-    rstn
-                </div>
+        </div>
+        <div class="grid">
+            <div class="grid__cell">
+                <div class="text text--medium text--light-1">#diary #photo #personal</div>
             </div>
-            <div class="grid__cell grid__cell--gray-darkest">
-                <div class="text text--small text--white">← →
-    use arrows
+            <div class="grid__cell">
+                <div class="text text--medium text--light-1">#design #font #process</div>
+            </div>
+            <div class="grid__cell">
+                <div class="text text--medium text--dark-1">#design #article</div>
+            </div>
+            <div class="grid__cell">
+                <div class="text text--caps text--small text--medium-1">П15, или Дождевая Станция&nbsp;— мобильная метеолаборатория, заброшенная на&nbsp;берег Норвежского Моря в&nbsp;рамках исследования аномалии «Полюс». Подключена к&nbsp;спутниковой сети «Рой», состоит из&nbsp;комплекта геомагнитных датчиков и&nbsp;жилого модуля оператора.</div>
+            </div>
+            <div class="grid__cell">
+                <div class="text text--caps text--small text--dark-1">01 ↆ</div>
+            </div>
+            <div class="grid__cell">
+                <div class="text text--caps text--small text--dark-1">02 ↆ</div>
+            </div>
+            <div class="grid__cell">
+                <div class="text text--caps text--small text--dark-1">03 ↆ</div>
+            </div>
+            <div class="grid__cell">
+                <div class="text text--caps text--small text--dark-1">Description ↆ</div>
+            </div>
+            <div class="grid__cell">
+                <div class="text text--caps text--small text--dark-1">▶ Last updated: 2020.09.16</div>
+            </div>
+            <div class="grid__cell grid__cell--bottom-right">
+                <div class="text text--caps text--small text--dark-1">Code by <a class="text--link" href="https://zhitkov.me/" target="_blank">zhitkov.me</a>&nbsp;&nbsp;<br>
                 </div>
             </div>
         </div>
     </div>
 
-    <style>
-        @media all and (min-width: 1281px) {
-            #section429 .grid:nth-child(1) {
-                grid-template-areas:
-                    'cell-01 cell-01 cell-01 cell-01'
-                    'cell-01 cell-01 cell-01 cell-01'
-                    'cell-01 cell-01 cell-01 cell-01'
-                    'cell-01 cell-01 cell-01 cell-01';
-            }
+    <script src="/assets/scripts/main.js"></script>
 
-            #section429 .grid:nth-child(2) {
-                grid-template-areas:
-                    'cell-01 cell-02 .       .      '
-                    '.       .       .       .      '
-                    '.       .       .       .      '
-                    '.       cell-03 cell-04 cell-05';
-            }
-        }
-
-        @media all and (min-width: 768px) and (max-width: 1280px) {
-            #section429 .grid:nth-child(1) {
-                grid-template-areas:
-                    'cell-01 cell-01'
-                    'cell-01 cell-01'
-                    'cell-01 cell-01'
-                    'cell-01 cell-01';
-            }
-
-            #section429 .grid:nth-child(2) {
-                grid-template-areas:
-                    'cell-01 cell-02'
-                    '.       cell-04'
-                    'cell-05 cell-03';
-            }
-        }
-
-        @media all and (min-width: 0px) and (max-width: 767px) {
-            #section429 .grid:nth-child(1) {
-                grid-template-areas:
-                    'cell-01'
-                    'cell-01'
-                    'cell-01'
-                    'cell-01'
-                    'cell-01';
-            }
-
-            #section429 .grid:nth-child(2) {
-                grid-template-areas:
-                    'cell-01'
-                    'cell-02'
-                    'cell-04'
-                    'cell-05'
-                    'cell-03';
-            }
-        }
-    </style>
-
-    <div class="section" id="section429">
-        <div class="grid">
-            <div class="grid__cell">
-                <div class="text text--big text--gray-light">The most merciful thing in the world, I think, is the inability of the human mind to correlate all its contents. We live on a placid island of ignorance in the midst of black seas of infinity, and it was not meant that we should voyage far. The sciences, each straining in its own direction, have hitherto harmed us little; but some day the piecing together of dissociated knowledge will open up such terrifying vistas of reality, and of our frightful position therein, that we shall either go mad from the revelation or flee from the light into the peace and safety of a new dark age. // H. P. Lovecraft (The Call of Cthulhu, 1928)</div>
-            </div>
-        </div>
-
-        <div class="grid">
-            <div class="grid__cell">
-                <div class="text text--small">< message info
-                    from
-                    id
-                    date
-                    time
-                    type
-                    .
-                    track
-                    artist
-                    album
-                    .
-                    received
-                    date
-                    time
-                    code
-                    response
-                    >
-                </div>
-            </div>
-            <div class="grid__cell">
-                <div class="text text--small"><
-                    rstn149
-                    —
-                    04.06.2019 mdy
-                    01.04 /spbtz
-                    —
-                    .
-                    corrupt data
-                    pye corner audio
-                    half-light
-                    .
-                    —
-                    —
-                    —
-                    429
-                    std103
-                    >
-                </div>
-            </div>
-            <div class="grid__cell">
-                <div class="text text--small">‵   \
-    \   \
-
-    rstn
-                </div>
-            </div>
-            <div class="grid__cell" style="background-image: url('/rainstation/assets/images/image-5.png')"></div>
-            <div class="grid__cell">
-                <div class="text text--small">← →
-    use arrows
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <style>
-        @media all and (min-width: 1281px) {
-            #section449 .grid {
-                grid-template-areas:
-                    'cell-01 cell-02 .       .      '
-                    'cell-03 cell-03 cell-03 cell-03'
-                    'cell-04 cell-05 .       .      '
-                    'cell-06 .       .       cell-07';
-            }
-        }
-
-        @media all and (min-width: 768px) and (max-width: 1280px) {
-            #section449 .grid {
-                grid-template-areas:
-                    'cell-01 cell-02'
-                    'cell-03 cell-03'
-                    'cell-04 cell-05'
-                    'cell-06 cell-07';
-            }
-        }
-
-        @media all and (min-width: 0px) and (max-width: 767px) {
-            #section449 .grid {
-                grid-template-areas:
-                    'cell-01'
-                    'cell-02'
-                    'cell-03'
-                    'cell-04'
-                    'cell-05'
-                    'cell-06'
-                    'cell-07';
-            }
-        }
-    </style>
-
-    <div class="section section--gray-light" id="section449">
-        <div class="grid">
-            <div class="grid__cell">
-                <div class="text text--small">< message info
-                    from
-                    id
-                    date
-                    time
-                    type
-
-                    received
-                    date
-                    time
-                    code
-                    response
-                    >
-                </div>
-            </div>
-            <div class="grid__cell">
-                <div class="text text--small"><
-                    rstn149
-                    —
-                    04.08.2019 mdy
-                    00.40 /spbtz
-                    —
-
-                    —
-                    —
-                    —
-                    439
-                    std103
-                    >
-                </div>
-            </div>
-            <div class="grid__cell">
-                <div class="text text--big">The only ultimate disaster that can befall us, I have come to realise, is to feel ourselves to be at home here on Earth.
-// Malcolm Muggerige</div>
-            </div>
-            <div class="grid__cell" style="background-image: url('/rainstation/assets/images/image-3.png')"></div>
-            <div class="grid__cell" style="background-image: url('/rainstation/assets/images/image-4.png')"></div>
-            <div class="grid__cell">
-                <div class="text text--small">‵   \
-    \   \
-
-    rstn
-                </div>
-            </div>
-            <div class="grid__cell">
-                <div class="text text--small">← →
-    use arrows
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script src="/rainstation/assets/scripts/main.js"></script>
+    <script src="/cpu-ui/assets/scripts/main.js"></script>
 </body>
 </html>

@@ -5,4 +5,22 @@
     --color-gray-middle: #b1bec2;
     --color-gray-light: #e1e5e5;
     --color-white: #fff;
+
+    --color-dark-1: #000408;
+    --color-dark-2: #101418;
+    --color-dark-3: #25292D;
+    --color-dark-4: #34383C;
+    --color-dark-5: #44484C;
+
+    --color-medium-1: #727579;
+    --color-medium-2: #7D8185;
+    --color-medium-3: #8A8D91;
+    --color-medium-4: #95999D;
+    --color-medium-5: #A0A5A9;
+
+    --color-light-1: #C6CACE;
+    --color-light-2: #D1D4D8;
+    --color-light-3: #DADEE2;
+    --color-light-4: #E4E8EC;
+    --color-light-5: #F7FBFF;
 }
