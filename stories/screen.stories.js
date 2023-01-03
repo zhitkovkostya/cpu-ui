@@ -1,6 +1,15 @@
+import image1 from "./assets/images/image-1.png";
+import image2 from "./assets/images/image-2.png";
+import image3 from "./assets/images/image-3.png";
+import image4 from "./assets/images/image-4.png";
+import image5 from "./assets/images/image-5.png";
+
 export default {
-  title: 'Screen'
-}
+  title: "Example/Screen",
+  parameters: {
+    layout: "fullscreen",
+  },
+};
 
 export const basic = () => `
     <style>
@@ -68,7 +77,7 @@ export const basic = () => `
         }
     </style>
     
-    <div class="section" id="section429" style="background-image: url('/images/image-1.png');">
+    <div class="section" id="section429" style="background-image: url(${image1});">
         <div class="grid">
             <div class="grid__cell">
                 <div class="text text--small text--white">< message info
@@ -103,7 +112,7 @@ export const basic = () => `
                 </div>
             </div>
             <div class="grid__cell grid__cell--gray-middle">
-                <img src="/images/image-2.png" alt="Image" class="image">            
+                <img src="${image2}" alt="Image" class="image">            
             </div>
             <div class="grid__cell grid__cell--gray-darkest">
                 <div class="text text--small text--white">‵   \\
@@ -119,7 +128,7 @@ export const basic = () => `
             </div>
         </div>
     </div>
-`
+`;
 
 export const screen439 = () => `
     <style>
@@ -195,8 +204,8 @@ export const screen439 = () => `
                 <div class="text text--big">The only ultimate disaster that can befall us, I have come to realise, is to feel ourselves to be at home here on Earth.
 // Malcolm Muggerige</div>
             </div>
-            <div class="grid__cell" style="background-image: url('/images/image-3.png')"></div>
-            <div class="grid__cell" style="background-image: url('/images/image-4.png')"></div>
+            <div class="grid__cell" style="background-image: url(${image3})"></div>
+            <div class="grid__cell" style="background-image: url(${image4})"></div>
             <div class="grid__cell">
                 <div class="text text--small">‵   \\
     \\   \\
@@ -211,7 +220,7 @@ export const screen439 = () => `
             </div>
         </div>
     </div>
-`
+`;
 
 export const screen429 = () => `
     <style>
@@ -327,7 +336,7 @@ export const screen429 = () => `
     rstn
                 </div>
             </div>
-            <div class="grid__cell" style="background-image: url('/images/image-5.png')"></div>
+            <div class="grid__cell" style="background-image: url(${image5})"></div>
             <div class="grid__cell">
                 <div class="text text--small">← →
     use arrows
@@ -335,4 +344,4 @@ export const screen429 = () => `
             </div>
         </div>
     </div>
-`
+`;
