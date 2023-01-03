@@ -1,15 +1,7 @@
 const { parallel } = require("gulp");
+const compileScss = require("./gulp/tasks/compile-scss");
+const optimizeImages = require("./gulp/tasks/optimize-images");
 
-const compileScss = (done) => {
-  console.log("Compile SCSS to CSS");
-
-  done();
-};
-
-const optimizeImages = (done) => {
-  console.log("Optimize Images");
-
-  done();
-};
+console.log(compileScss);
 
 exports.default = parallel(compileScss, optimizeImages);
