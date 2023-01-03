@@ -1,9 +1,9 @@
-const colorPrefix = '--color-'
+const colorPrefix = "--color-";
 
 export function getColorVariables() {
   return Array.from(document.styleSheets)
     .filter(
-      sheet =>
+      (sheet) =>
         sheet.href === null || sheet.href.startsWith(window.location.origin)
     )
     .reduce(
@@ -13,25 +13,25 @@ export function getColorVariables() {
           ...Array.from(sheet.cssRules).reduce(
             (def, rule) =>
               (def =
-                rule.selectorText === ':root'
+                rule.selectorText === ":root"
                   ? [
-                    ...def,
-                    ...Array.from(rule.style).filter(name =>
-                      name.startsWith(colorPrefix)
-                    )
-                  ]
+                      ...def,
+                      ...Array.from(rule.style).filter((name) =>
+                        name.startsWith(colorPrefix)
+                      ),
+                    ]
                   : def),
             []
-          )
+          ),
         ]),
       []
-    )
+    );
 }
 
 export function getColorNames() {
-  const colorVariables = getColorVariables()
+  const colorVariables = getColorVariables();
 
-  return colorVariables.map(colorVariable => {
-    return colorVariable.replace(colorPrefix, '')
-  })
+  return colorVariables.map((colorVariable) => {
+    return colorVariable.replace(colorPrefix, "");
+  });
 }
