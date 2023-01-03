@@ -22,7 +22,8 @@
     "@storybook/manager-webpack4": "6.5.15",
     "@storybook/testing-library": "0.0.13",
     "babel-loader": "8.3.0",
+    "gulp": "4.0.2",
+    "gulp-cli": "2.3.0",
     "standard": "17.0.0"
-  },
-  "dependencies": {}
+  }
 }
