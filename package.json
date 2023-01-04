@@ -15,6 +15,7 @@
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "7.20.7",
+    "@babel/preset-env": "7.20.2",
     "@storybook/addon-actions": "6.5.15",
     "@storybook/addon-essentials": "6.5.15",
     "@storybook/addon-interactions": "6.5.15",
@@ -26,6 +27,7 @@
     "babel-loader": "8.3.0",
     "concurrently": "7.6.0",
     "gulp": "4.0.2",
+    "gulp-babel": "8.0.0",
     "gulp-cli": "2.3.0",
     "gulp-sass": "5.1.0",
     "sass": "1.57.1",
