@@ -1,6 +1,5 @@
 const { parallel } = require("gulp");
 const compileScss = require("./gulp/tasks/compile-scss");
+const copyFonts = require("./gulp/tasks/copy-fonts");
 
-console.log(compileScss);
-
-exports.default = parallel(compileScss);
+exports.default = parallel(compileScss, copyFonts);
