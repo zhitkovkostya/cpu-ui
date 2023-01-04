@@ -1,11 +1,14 @@
+const { dest, src } = require("gulp");
+const config = require("../config");
+const sass = require("gulp-sass")(require("sass"));
+
 /**
  * Compiles SCSS to CSS
- * @param {Function} done
  */
-const compileScss = (done) => {
-  console.log("Compile SCSS to CSS");
-
-  done();
+const compileScss = () => {
+  return src("src/styles/main.scss")
+    .pipe(sass.sync().on("error", sass.logError))
+    .pipe(dest(config.root));
 };
 
 module.exports = compileScss;
