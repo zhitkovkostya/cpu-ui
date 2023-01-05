@@ -1,11 +1,11 @@
 const { dest, src } = require("gulp");
-const config = require("../config");
+const { sourcePaths, buildPaths } = require("../config");
 
 /**
  * Moves font files to dist
  */
 const copyFonts = () => {
-  return src("src/assets/fonts/**").pipe(dest(config.root + "/assets/fonts"));
+  return src(sourcePaths.allFonts).pipe(dest(buildPaths.fonts));
 };
 
 module.exports = copyFonts;

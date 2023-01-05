@@ -2,14 +2,14 @@ const { dest } = require("gulp");
 const babelify = require("babelify");
 const browserify = require("browserify");
 const source = require("vinyl-source-stream");
-const { root } = require("../config");
+const { buildPaths } = require("../config");
 
 /**
- *
+ * Creates a bundle from EJS modules.
  */
 const compileJs = () => {
-  browserify({
-    entries: "./dist/scripts/main.js",
+  return browserify({
+    entries: `${buildPaths.scriptsTmp}/main.js`,
   })
     .transform(
       babelify.configure({
@@ -18,7 +18,7 @@ const compileJs = () => {
     )
     .bundle()
     .pipe(source("bundle.js"))
-    .pipe(dest(root));
+    .pipe(dest(buildPaths.root));
 };
 
 module.exports = compileJs;
