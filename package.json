@@ -8,7 +8,8 @@
     "lint": "npx standard --fix",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "build": "concurrently \"gulp\" \"npm run build-storybook\"",
+    "prebuild": "gulp",
+    "build": "npm run build-storybook",
     "dev": "concurrently \"gulp dev\" \"npm run storybook\""
   },
   "author": "Konstantin Zhitkov",
