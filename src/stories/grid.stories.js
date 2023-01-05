@@ -1,11 +1,27 @@
-import imageFile from "./assets/images/image-1.png";
-import { renderGridCell } from "./grid";
-
 export default {
   title: "Components/Grid",
   parameters: {
     layout: "fullscreen",
   },
+};
+
+/**
+ * Generates grid cell markup
+ * @param {String} props.text content
+ * @param {String} props.color background color
+ * @returns {String}
+ */
+const renderGridCell = ({ text, color }) => {
+  const baseClassName = "grid__cell";
+  const classNames = [
+    baseClassName,
+    color ? `${baseClassName}--${color}` : null,
+  ].join(" ");
+  return `
+    <div class="${classNames}">
+      <div class="text">${text}</div>
+    </div>
+  `;
 };
 
 const Template = ({ isBordered = false, colors = [] }) => {
@@ -18,8 +34,6 @@ const Template = ({ isBordered = false, colors = [] }) => {
   const itemsHTML = items
     .map((item, i) => renderGridCell({ text: item, color: colors[i] }))
     .join("");
-
-  console.log(itemsHTML);
 
   return `
     <style>
