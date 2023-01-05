@@ -1,0 +1,243 @@
+:root {
+  --scale-unit: 1;
+  --base-unit: calc(10px * var(--scale-unit));
+  --font-size-small: var(--base-unit);
+  --font-size-medium: calc(var(--base-unit) * 2);
+  --font-size-big: calc(var(--base-unit) * 4);
+  --font-size-huge: calc(var(--base-unit) * 8);
+  --font-size-paragraph: calc(var(--base-unit) * 2);
+  --line-height-small: 2;
+  --line-height-medium: 1.5;
+  --line-height-big: 1.25;
+  --line-height-huge: 1.25;
+  --line-height-paragraph: 1.5;
+}
+
+@media all and (min-width: 1281px) {
+  :root {
+    --scale-unit: 1;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1280px) {
+  :root {
+    --scale-unit: 1;
+  }
+}
+
+@media all and (min-width: 0px) and (max-width: 767px) {
+  :root {
+    --scale-unit: 1;
+  }
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('./assets/fonts/inter-bold.woff2?v=3.15') format('woff2'),
+       url('./assets/fonts/inter-bold.woff?v=3.15') format('woff');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./assets/fonts/inter-regular.woff2?v=3.15') format('woff2'),
+       url('./assets/fonts/inter-regular.woff?v=3.15') format('woff');
+}
+
+.text {
+  z-index: 1;
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--font-size-medium);
+  line-height: var(--line-height-medium);
+  white-space: pre-line;
+  user-select: none;
+
+  &::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+  }
+
+  &--small {
+    font-size: var(--font-size-small);
+    line-height: var(--line-height-small);
+
+    &::before {
+      margin-top: calc((1 - var(--line-height-small)) * 0.5em);
+    }
+
+    &::after {
+      margin-bottom: calc((1 - var(--line-height-small)) * 0.5em);
+    }
+  }
+
+  &--medium {
+    font-size: var(--font-size-medium);
+    line-height: var(--line-height-medium);
+
+    &::before {
+      margin-top: calc((1 - var(--line-height-medium)) * 0.5em);
+    }
+
+    &::after {
+      margin-bottom: calc((1 - var(--line-height-medium)) * 0.5em);
+    }
+  }
+
+  &--big {
+    font-weight: 400;
+    font-size: var(--font-size-big);
+    line-height: var(--line-height-big);
+
+    &::before {
+      margin-top: calc((1 - var(--line-height-big)) * 0.5em);
+    }
+
+    &::after {
+      margin-bottom: calc((1 - var(--line-height-big)) * 0.5em);
+    }
+  }
+
+  &--huge {
+    font-weight: normal;
+    font-size: var(--font-size-huge);
+    line-height: var(--line-height-huge);
+
+    &::before {
+      margin-top: calc((1 - var(--line-height-huge)) * 0.5em);
+    }
+
+    &::after {
+      margin-bottom: calc((1 - var(--line-height-huge)) * 0.5em);
+    }
+  }
+
+  &--paragraph {
+    font-size: var(--font-size-paragraph);
+    line-height: var(--line-height-paragraph);
+    text-transform: none;
+    letter-spacing: normal;
+    font-weight: 300;
+    text-transform: none;
+
+    &::before {
+      margin-top: calc((1 - var(--line-height-paragraph)) * 0.5em);
+    }
+
+    &::after {
+      margin-bottom: calc((1 - var(--line-height-paragraph)) * 0.5em);
+    }
+  }
+
+  &--caps {
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  &--black {
+    color: var(--color-black);
+  }
+
+  &--gray-darkest {
+    color: var(--color-gray-darkest);
+  }
+
+  &--gray-dark {
+    color: var(--color-gray-dark);
+  }
+
+  &--gray-middle {
+    color: var(--color-gray-middle);
+  }
+
+  &--gray-light {
+    color: var(--color-gray-light);
+  }
+  
+  &--white {
+    color: var(--color-white);
+  }
+  
+  &--link {
+    text-decoration: none;
+    color: #007FFF;
+  }
+  
+  &--link:hover {
+    opacity: 0.7;
+  }
+  
+  &--dark-1 {
+    color: var(--color-dark-1);
+  }
+  
+  &--dark-2 {
+    color: var(--color-dark-2);
+  }
+  
+  &--dark-3 {
+    color: var(--color-dark-3);
+  }
+  
+  &--dark-4 {
+    color: var(--color-dark-4);
+  }
+  
+  &--dark-5 {
+    color: var(--color-dark-5);
+  }
+  
+  &--medium-1 {
+    color: var(--color-medium-1);
+  }
+  
+  &--medium-2 {
+    color: var(--color-medium-2);
+  }
+  
+  &--medium-3 {
+    color: var(--color-medium-3);
+  }
+  
+  &--medium-4 {
+    color: var(--color-medium-4);
+  }
+  
+  &--medium-5 {
+    color: var(--color-medium-5);
+  }
+  
+  &--light-1 {
+    color: var(--color-light-1);
+  }
+  
+  &--light-2 {
+    color: var(--color-light-2);
+  }
+  
+  &--light-3 {
+    color: var(--color-light-3);
+  }
+  
+  &--light-4 {
+    color: var(--color-light-4);
+  }
+  
+  &--light-5 {
+    color: var(--color-light-5);
+  }  
+}

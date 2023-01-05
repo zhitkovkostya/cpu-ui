@@ -1,0 +1,11 @@
+{
+  "files": [
+    "src/scripts/main.ts",
+    "src/scripts/debounce.ts",
+    "src/scripts/update-hash.ts"
+  ],
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "target": "es5"
+  }
+}
