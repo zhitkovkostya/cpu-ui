@@ -1,2 +1,2 @@
 import "../../dist/main.css";
-import "../../dist/main.js";
+import "../../dist/bundle.js";

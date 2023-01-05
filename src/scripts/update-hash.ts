@@ -1,15 +1,7 @@
-const debounce = (func, wait = 100) => {
-  let timeout;
-
-  return () => {
-    window.clearTimeout(timeout);
-    timeout = window.setTimeout(() => {
-      func.apply(this);
-    }, wait);
-  };
-};
-
-const onScroll = () => {
+/**
+ * Updates URL hash with the visible section id
+ */
+export const updateHash = () => {
   const sectionElements = document.querySelectorAll(".section");
 
   sectionElements.forEach(function (sectionElement, index) {
@@ -25,5 +17,3 @@ const onScroll = () => {
     }
   });
 };
-
-window.addEventListener("scroll", debounce(onScroll));

@@ -1,14 +1,23 @@
-const { dest, src } = require("gulp");
-const babel = require("gulp-babel");
+const { dest } = require("gulp");
+const babelify = require("babelify");
+const browserify = require("browserify");
+const source = require("vinyl-source-stream");
 const { root } = require("../config");
 
+/**
+ *
+ */
 const compileJs = () => {
-  return src("src/scripts/**/*.js")
-    .pipe(
-      babel({
+  browserify({
+    entries: "./dist/scripts/main.js",
+  })
+    .transform(
+      babelify.configure({
         presets: ["@babel/preset-env"],
       })
     )
+    .bundle()
+    .pipe(source("bundle.js"))
     .pipe(dest(root));
 };
 
