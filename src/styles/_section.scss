@@ -1,3 +1,6 @@
+$light-colors: ('white', 'gray-light', 'gray-middle');
+$dark-colors: ('gray-dark', 'gray-darkest', 'black', 'dark-1', 'dark-2', 'dark-3', 'dark-4', 'dark-5');
+
 .section {
   overflow: hidden;
   position: relative;
@@ -6,13 +9,17 @@
   background: transparent no-repeat center center fixed;
   background-size: cover;
 
-  &--gray-darkest {
-    background-color: var(--color-gray-darkest);
-    color: var(--color-gray-light);
+  @each $color in $light-colors {
+    &--#{$color} {
+      background-color: var(--color-#{$color});
+      color: var(--color-gray-darkest);
+    }
   }
 
-  &--gray-light {
-    background-color: var(--color-gray-light);
-    color: var(--color-gray-darkest);
+  @each $color in $dark-colors {
+    &--#{$color} {
+      background-color: var(--color-#{$color});
+      color: var(--color-gray-light);
+    }
   }
 }

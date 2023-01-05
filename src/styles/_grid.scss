@@ -1,3 +1,6 @@
+$light-colors: ('white', 'gray-light', 'gray-middle');
+$dark-colors: ('gray-dark', 'gray-darkest', 'black', 'dark-1', 'dark-2', 'dark-3', 'dark-4', 'dark-5');
+
 .grid {
   display: grid;
   grid-auto-rows: 25vh;
@@ -47,39 +50,23 @@
         grid-area: cell-#{if($col < 10, '0' + $col, $col)};
       }
     }
-  
-    &--white {
-      background-color: var(--color-white);
+
+    @each $color in $light-colors {
+      &--#{$color} {
+        background-color: var(--color-#{$color});
+      }
     }
-  
-    &--gray-light {
-      background-color: var(--color-gray-light);
-    }
-  
-    &--gray-middle {
-      background-color: var(--color-gray-middle);
-    }
-  
-    &--gray-dark {
-      background-color: var(--color-gray-dark);
-      color: var(--color-white);
-    }
-  
-    &--gray-darkest {
-      background-color: var(--color-gray-darkest);
-      color: var(--color-white);
-    }
-  
-    &--black {
-      background-color: var(--color-black);
-      color: var(--color-white);
-    }
-  
-    @for $level from 1 to 6 {
-      &--dark-#{$level} {
-        background-color: var(--color-dark-#{$level});
+
+    @each $color in $dark-colors {
+      &--#{$color} {
+        background-color: var(--color-#{$color});
         color: var(--color-white);
       }
+    }
+
+    &--bottom-right {
+      justify-content: flex-end;
+      align-items: flex-end;
     }
   } 
 }

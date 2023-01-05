@@ -1,3 +1,27 @@
+$colors: (
+  'black',
+  'gray-darkest',
+  'gray-dark',
+  'gray-middle',
+  'gray-light',
+  'white',
+  'medium-1',
+  'medium-2',
+  'medium-3',
+  'medium-4',
+  'medium-5',
+  'light-1',
+  'light-2',
+  'light-3',
+  'light-4',
+  'light-5',
+  'dark-1',
+  'dark-2',
+  'dark-3',
+  'dark-4',
+  'dark-5',
+);
+
 :root {
   --scale-unit: 1;
   --base-unit: calc(10px * var(--scale-unit));
@@ -148,96 +172,18 @@
     letter-spacing: 0.05em;
   }
 
-  &--black {
-    color: var(--color-black);
-  }
-
-  &--gray-darkest {
-    color: var(--color-gray-darkest);
-  }
-
-  &--gray-dark {
-    color: var(--color-gray-dark);
-  }
-
-  &--gray-middle {
-    color: var(--color-gray-middle);
-  }
-
-  &--gray-light {
-    color: var(--color-gray-light);
-  }
-  
-  &--white {
-    color: var(--color-white);
-  }
-  
   &--link {
     text-decoration: none;
     color: #007FFF;
+
+    &:hover {
+      opacity: 0.7;
+    }
   }
-  
-  &--link:hover {
-    opacity: 0.7;
+
+  @each $color in $colors {
+    &--#{$color} {
+      color: var(--color-#{$color});
+    }
   }
-  
-  &--dark-1 {
-    color: var(--color-dark-1);
-  }
-  
-  &--dark-2 {
-    color: var(--color-dark-2);
-  }
-  
-  &--dark-3 {
-    color: var(--color-dark-3);
-  }
-  
-  &--dark-4 {
-    color: var(--color-dark-4);
-  }
-  
-  &--dark-5 {
-    color: var(--color-dark-5);
-  }
-  
-  &--medium-1 {
-    color: var(--color-medium-1);
-  }
-  
-  &--medium-2 {
-    color: var(--color-medium-2);
-  }
-  
-  &--medium-3 {
-    color: var(--color-medium-3);
-  }
-  
-  &--medium-4 {
-    color: var(--color-medium-4);
-  }
-  
-  &--medium-5 {
-    color: var(--color-medium-5);
-  }
-  
-  &--light-1 {
-    color: var(--color-light-1);
-  }
-  
-  &--light-2 {
-    color: var(--color-light-2);
-  }
-  
-  &--light-3 {
-    color: var(--color-light-3);
-  }
-  
-  &--light-4 {
-    color: var(--color-light-4);
-  }
-  
-  &--light-5 {
-    color: var(--color-light-5);
-  }  
 }
