@@ -1,4 +1,4 @@
-import image3 from "./assets/images/image-3.png";
+import image3 from "./assets/images/image-1.png";
 
 export default {
   title: "Components/Section",
