@@ -1,7 +1,7 @@
 import { getColorVariables } from "./color.utils";
 
 export default {
-  title: "Colors",
+  title: "Tokens/Colors",
   parameters: {
     layout: "fullscreen",
   },

@@ -1,7 +1,7 @@
 import { getColorNames } from "./color.utils";
 
 export default {
-  title: "Text",
+  title: "Components/Text",
   parameters: {
     layout: "fullscreen",
   },

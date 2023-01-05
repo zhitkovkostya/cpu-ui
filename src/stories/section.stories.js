@@ -1,7 +1,7 @@
 import image3 from "./assets/images/image-3.png";
 
 export default {
-  title: "Section",
+  title: "Components/Section",
   parameters: {
     layout: "fullscreen",
   },

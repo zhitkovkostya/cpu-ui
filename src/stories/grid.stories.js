@@ -1,8 +1,8 @@
 import imageFile from "./assets/images/image-1.png";
 import { renderGridCell } from "./grid";
-console.log(imageFile);
+
 export default {
-  title: "Grid",
+  title: "Components/Grid",
   parameters: {
     layout: "fullscreen",
   },
